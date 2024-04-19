@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Harmonic Analysis Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Harmonic Analysis Tool, a dynamic website built with React for musicians, composers, and music enthusiasts. This tool allows users to perform a comprehensive harmonic analysis of any musical scale they input, providing a deep dive into the musical possibilities contained within.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Scale Input**: Users can input any musical scale to initiate the analysis.
+- **Chord Calculation**: The tool calculates all possible chords that can be derived from the given scale.
+- **Key Selection**: Users have the option to select a musical key to view the chords specific to that key.
+- **Chord Representation**: Chords are displayed both in standard notation and in a Roman numeral system, accommodating different levels of musical theory knowledge.
+- **Scale Degrees**: The tool displays the scale intervals, enhancing understanding of the scale's structure.
+- **Scale Recognition**: The tool recognizes a large number of musical scales and provides detailed information on recognized scales, enhancing educational value.
 
-### `npm start`
+## How It Works
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Enter a Scale**: Start by entering the notes of your scale.
+2. **Select a Key** (optional): Choose a key to view the chords in that specific key.
+3. **Explore Chords and Scale Degrees**: View the chords and their Roman numeral notation, along with the scale degrees.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**: Utilizes React for efficient, interactive UI components.
+- **Custom Harmonic Analysis Algorithm**: Analyzes scales client-side using custom algorithm
