@@ -1,0 +1,11 @@
+
+.note-selector {
+  height: 50px;
+  width: 65%;
+  min-width: 800px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc
+}
