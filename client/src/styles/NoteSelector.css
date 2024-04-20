@@ -1,4 +1,16 @@
 
+button {
+  width: 70px;
+  height: 40px;
+  margin: 2px;
+  font-size: 16px;
+  color: black;
+  background-color: #ffbfc1;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 .note-selector {
   height: 50px;
   width: 65%;
@@ -7,5 +19,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ccc
+  background-color: #ccc;
 }
