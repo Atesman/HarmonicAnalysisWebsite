@@ -1,48 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/NoteSelector.css';
 
 
-const NoteSelector = () => {
+function NoteSelector() {
 
-	return (
+	const [buttonStates, setButtonStates] = useState([true, false, true, false, true, true, false, true, false, true, false, true]);
+	const buttonNames = ["1", "2b", "2", "b3", "3", "4", "#4/b5", "5", "b6", "6", "b7", "7"];
 
+	const handleButtonClick = index => {
+		const newStates = [...buttonStates];
+		newStates[index] = !newStates[index];
+		setButtonStates(newStates);
+	}
+
+	return(
 		<div className="note-selector">
-			<button>
-                1
-            </button>
-            <button>
-                b2
-            </button>
-            <button>
-                2
-            </button>
-            <button>
-                #2 / b3
-            </button>
-            <button>
-                3
-            </button>
-            <button>
-                4
-            </button>
-            <button>
-                #4 / b5
-            </button>
-            <button>
-                5
-            </button>
-            <button>
-                b6
-            </button>
-            <button>
-                6
-            </button>
-            <button>
-                b7
-            </button>
-            <button>
-                7
-            </button>
+			{buttonStates.map((state, index) => (
+				<button
+					key={index}
+					onClick={() => handleButtonClick(index)}
+					className={`button ${state ? 'button-active' : ''}`}
+				>
+				{buttonNames[index]}
+				</button>
+			))}
 		</div>
 	);
 }
