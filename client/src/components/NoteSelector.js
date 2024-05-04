@@ -7,9 +7,11 @@ function NoteSelector({notes, updateNoteValues}) {
 	const noteDegreeNames = ["1", "2b", "2", "b3", "3", "4", "#4/b5", "5", "b6", "6", "b7", "7"];
 
 	const swapNoteValue = index => {
-		const newNoteValues = [...notes];
-		newNoteValues[index] = !newNoteValues[index];
-		updateNoteValues(newNoteValues);
+		if(index !== 0){
+			const newNoteValues = [...notes];
+			newNoteValues[index] = !newNoteValues[index];
+			updateNoteValues(newNoteValues);
+		}
 	}
 
 	return(

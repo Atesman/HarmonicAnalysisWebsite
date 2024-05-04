@@ -1,5 +1,16 @@
 
-button {
+.note-selector {
+  height: 50px;
+  width: 65%;
+  min-width: 970px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.button {
   width: 70px;
   height: 40px;
   margin: 2px;
@@ -11,13 +22,6 @@ button {
   border-radius: 50%;
 }
 
-.note-selector {
-  height: 50px;
-  width: 65%;
-  min-width: 800px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ccc;
+.button-active {
+  background-color: #ff9fa2;
 }

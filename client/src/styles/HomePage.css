@@ -1,8 +1,23 @@
 
-.note-selector-container {
+.home-page-container {
   height: 100vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.display-window-container {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.note-selector-container {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
