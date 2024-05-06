@@ -22,7 +22,7 @@ function NoteSelector({notes, updateNoteValues}) {
 					onClick={() => swapNoteValue(index)}
 					className={`button ${state ? 'button-active' : ''}`}
 				>
-				{noteDegreeNames[index]}
+					{noteDegreeNames[index]}
 				</button>
 			))}
 		</div>

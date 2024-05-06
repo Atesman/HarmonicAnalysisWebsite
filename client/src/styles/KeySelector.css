@@ -1,5 +1,5 @@
 
-.note-selector {
+.key-selector {
   height: 50px;
   width: 65%;
   min-width: 970px;
@@ -13,7 +13,7 @@
 .button {
   width: 70px;
   height: 40px;
-  margin: 2px;  
+  margin: 2px;
   font-size: 16px;
   color: black;
   background-color: #ffbfc1;
