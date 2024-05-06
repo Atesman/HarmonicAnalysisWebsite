@@ -4,7 +4,7 @@ import '../styles/NoteSelector.css';
 
 function NoteSelector({notes, updateNoteValues}) {
 
-	const noteDegreeNames = ["1", "2b", "2", "b3", "3", "4", "#4/b5", "5", "b6", "6", "b7", "7"];
+	const noteDegreeNames = ["1", "b2", "2", "b3", "3", "4", "#4/b5", "5", "b6", "6", "b7", "7"];
 
 	const swapNoteValue = index => {
 		if(index !== 0){

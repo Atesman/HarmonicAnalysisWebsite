@@ -3,12 +3,11 @@ import '../styles/KeySelector.css';
 
 
 function KeySelector({tonic, changeKey}) {
+
     const [activeKey, setActiveKey] = useState(tonic);
 
     const handleClick = (keyName) => {
-
     	if (activeKey === keyName) return;
-    	
         setActiveKey(keyName);
         changeKey(keyName);
     };
