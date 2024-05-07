@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import DisplayWindow from '../components/DisplayWindow';
+import MainDisplay from '../components/MainDisplay';
 import KeySelector from '../components/KeySelector';
 import NoteSelector from '../components/NoteSelector';
 import SharpOrFlat from '../components/SharpOrFlat';
+import DegreeDisplay from '../components/DegreeDisplay';
 import '../styles/HomePage.css';
 
 
@@ -14,8 +15,9 @@ const HomePage = () => {
 
 	return (
 		<div className="home-page-container">
-			<div className="display-window-container">
-				<DisplayWindow />
+
+			<div className="main-display-container">
+				<MainDisplay />
 			</div>
 			<div className="note-selector-container">
 				<NoteSelector notes={notes} updateNoteValues={updateNoteValues} />
@@ -25,6 +27,9 @@ const HomePage = () => {
 			</div>
 			<div className="sharp-or-flat-container">
 				<SharpOrFlat sharpOrFlat={sharpOrFlat} changeSharpOrFlat={changeSharpOrFlat} />
+			</div>
+			<div className="degree-display-container">
+				<DegreeDisplay />
 			</div>
 		</div>
 	);
