@@ -35,3 +35,10 @@
   display: flex;
   justify-content: center;
 }
+
+.degree-display-container {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,10 @@
+
+.degree-display{
+  height: 600px;
+  width: 970px;
+  margin: 30px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
