@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/DegreeDisplay.css';
 
 
-function DegreeDisplay(){
+function DegreeDisplay(notes){
 
 	return(
 		<div className="degree-display">

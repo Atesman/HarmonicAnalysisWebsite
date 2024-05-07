@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/InfoDisplay.css';
 
 
-function InfoDisplay(){
+function InfoDisplay(notes){
 
 	return(
 		<div className="info-display">

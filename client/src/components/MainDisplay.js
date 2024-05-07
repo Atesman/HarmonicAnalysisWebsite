@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/MainDisplay.css';
 
 
-function MainDisplay(){
+function MainDisplay({notes, tonic, sharpOrFlat}){
 
 	return(
 		<div className="main-display">

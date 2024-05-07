@@ -18,22 +18,27 @@ const HomePage = () => {
 		<div className="home-page-container">
 
 			<div className="main-display-container">
-				<MainDisplay />
+				<MainDisplay notes={notes} tonic={tonic} sharpOrFlat={sharpOrFlat} />
 			</div>
+
 			<div className="note-selector-container">
 				<NoteSelector notes={notes} updateNoteValues={updateNoteValues} />
 			</div>
+
 			<div className="key-selector-container">
 				<KeySelector tonic={tonic} changeKey={changeKey} />
 			</div>
+
 			<div className="sharp-or-flat-container">
 				<SharpOrFlat sharpOrFlat={sharpOrFlat} changeSharpOrFlat={changeSharpOrFlat} />
 			</div>
+
 			<div className="degree-display-container">
-				<DegreeDisplay />
+				<DegreeDisplay notes={notes} />
 			</div>
+
 			<div className="info-display-container">
-				<InfoDisplay />
+				<InfoDisplay notes={notes} />
 			</div>
 		</div>
 	);
