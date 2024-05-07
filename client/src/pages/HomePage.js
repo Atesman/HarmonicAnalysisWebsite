@@ -4,6 +4,7 @@ import KeySelector from '../components/KeySelector';
 import NoteSelector from '../components/NoteSelector';
 import SharpOrFlat from '../components/SharpOrFlat';
 import DegreeDisplay from '../components/DegreeDisplay';
+import InfoDisplay from '../components/InfoDisplay';
 import '../styles/HomePage.css';
 
 
@@ -30,6 +31,9 @@ const HomePage = () => {
 			</div>
 			<div className="degree-display-container">
 				<DegreeDisplay />
+			</div>
+			<div className="info-display-container">
+				<InfoDisplay />
 			</div>
 		</div>
 	);

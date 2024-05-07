@@ -38,3 +38,9 @@
   display: flex;
   justify-content: center;
 }
+
+.info-display-container {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
