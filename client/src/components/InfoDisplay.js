@@ -3,7 +3,7 @@ import {detectScale} from '../utils/DetectScale.js'
 import '../styles/InfoDisplay.css';
 
 
-function InfoDisplay(notes){
+const InfoDisplay = React.memo(function InfoDisplay(notes){
 
 	const [scaleInfo, updateInfo] = useState();
 	
@@ -21,6 +21,6 @@ function InfoDisplay(notes){
 			</div>
 		</div>
 	);
-}
+});
 
 export default InfoDisplay;
