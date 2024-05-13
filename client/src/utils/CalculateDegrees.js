@@ -18,31 +18,31 @@ function calculateDegrees(notes){
 	for (let i = 0; i < scale.length; i++) {
 
 	    // Tonic is hard-coded
-	    if (i == 0) {
+	    if (i === 0) {
 	        noteDegreeNames.push("1");
 	        continue;
 	    }
 
 	    // #2/b3
-	    if (i == 3 && scale[i] == 1) {
+	    if (i === 3 && scale[i] === true) {
 	        sharpTwoFlatThree(scale, noteDegreeNames);
 	        continue;
 	    }
 
 	    // Tritone
-	    if (i == 6 && scale[i] == 1) {
+	    if (i === 6 && scale[i] === true) {
 	        tritone(scale, noteDegreeNames);
 	        continue;
 	    }
 
 	    // #5/b6
-	    if (i == 8 && scale[i] == 1) {
+	    if (i === 8 && scale[i] === true) {
 	        sharpFiveFlatSix(scale, noteDegreeNames);
 	        continue;
 	    }
 	    
 	    // All other degrees
-	    if (scale[i] == 1) {
+	    if (scale[i] === true) {
 	        noteDegreeNames.push(degreeSymbols[i]);
 	        continue;
 	    }
@@ -59,7 +59,7 @@ function calculateDegrees(notes){
 function sharpTwoFlatThree(scale, noteDegreeNames) {
 
     // If Major 3rd is present
-    if (scale[4] == 1) {
+    if (scale[4] === true) {
         noteDegreeNames.push("#2");
     }
 
@@ -75,24 +75,24 @@ function tritone(scale, noteDegreeNames) {
 	//INCOMPLETE TRITONE LOGIC
 
     // If 4 = YES and 5 = NO
-    if (scale[5] == 1 && scale[7] == 0) {
+    if (scale[5] === true && scale[7] === false) {
         noteDegreeNames.push("b5");
     }
 
     // If 4 = NO and 5 = YES
-    else if (scale[5] == 0 && scale[7] == 1) {
+    else if (scale[5] === false && scale[7] === true) {
         noteDegreeNames.push("#4");
     }
 
     // If 4 = YES and 5 = YES
-    else if (scale[5] == 1 && scale[7] == 1) {
+    else if (scale[5] === true && scale[7] === true) {
 
         // If Major 3 is present at all
-        if (scale[4] == 1) {
+        if (scale[4] === true) {
             noteDegreeNames.push("#4");
         }
         // If ONLY Minor 3rd is present
-        else if (scale[3] == 1) {
+        else if (scale[3] === true) {
             noteDegreeNames.push("b5");
         }
         // If NO 3rd present
@@ -113,7 +113,7 @@ function tritone(scale, noteDegreeNames) {
 
 function sharpFiveFlatSix(scale, noteDegreeNames) {
     // If 5 = NO and 3 = YES
-    if (scale[7] == 0 && scale[4] == 1) {
+    if (scale[7] === false && scale[4] === true) {
         noteDegreeNames.push("#5");
     } else {
         noteDegreeNames.push("b6");
