@@ -1,14 +1,14 @@
 import scaleDictionary from './ScaleDictionary';
 
 
-export function detectScale(notes){
+function detectScale(notes){
 
 	console.log(notes);
 	const notesArray = notes.notes;
 	const notesString = notesArray.map(note => note ? '1' : '0').join('');
 	console.log(notesString);
 
-	let scaleInfo = ["N/A", "N/A"];
+	let scaleInfo = ["", ""];
 
 
 	if (scaleDictionary.has(notesString)) {
@@ -20,3 +20,6 @@ export function detectScale(notes){
 
 	return scaleInfo[0] + "  /  " + scaleInfo[1];
 }
+
+
+export default detectScale;

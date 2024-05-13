@@ -40,7 +40,7 @@ const scaleDictionary = new Map([
   ["110110101100", ["Altered Diminished", "7th Mode of the Harmonic Minor Scale / aka Super Locrian bb7"]],
 
   //Melodic Minor
-  ["101101010101", ["Melodic Minor", ""]],
+  ["101101010101", ["Melodic Minor", '"Ascending Melodic Minor"']],
   ["110101010110", ["Dorian b9", "2nd Mode of the Melodic Minor Scale"]],
   ["101010101101", ["Lydian Augmented", "3rd Mode of the Melodic Minor Scale"]],
   ["101010110110", ["Lydian Dominant", "4th Mode of the Melodic Minor Scale / aka Acoustic or Overtone"]],

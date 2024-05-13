@@ -1,16 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import calculateDegrees from '../utils/CalculateDegrees.js'
 import '../styles/DegreeDisplay.css';
 
 
-function DegreeDisplay(notes){
+const DegreeDisplay = React.memo(function DegreeDisplay(notes){
+
+	const [degreeInfo, updateInfo] = useState("1 - 2 - 3 - 4 - 5 - 6 - 7");
+
+
+	useEffect(() => {
+		const newDegreeInfo = calculateDegrees(notes);
+		updateInfo(newDegreeInfo);
+	}, [notes]);
+
 
 	return(
 		<div className="degree-display">
 			<div>
-				     1 - 2 - 3 - example - 5 - 6 - 7    
+				 	{degreeInfo}    
 			</div>
 		</div>
 	);
-}
+});
 
 export default DegreeDisplay;

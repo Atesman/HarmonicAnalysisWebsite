@@ -1,6 +1,6 @@
 # Harmonic Analysis Tool
 
-Welcome to the Harmonic Analysis Tool, a dynamic website built with React for musicians, composers, and music enthusiasts. This tool allows users to perform a comprehensive harmonic analysis of any musical scale they input, providing a deep dive into the musical possibilities contained within.
+This is the source code for an online harmonic analysis tool, a dynamic website built with React for musicians, composers, and music enthusiasts. This tool allows users to perform a comprehensive harmonic analysis of any musical scale they input, providing a deep dive into the musical possibilities contained within.
 
 ## Features
 
