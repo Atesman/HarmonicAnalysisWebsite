@@ -17,6 +17,13 @@ function MainDisplay({notes, tonic, sharpOrFlat}){
 			console.log(key+", " +value);
 		});
 
+		const tempNames = nameChords(newChordInfo);
+		updateChordNames(tempNames);
+
+		tempNames.forEach((chordList) => {
+			console.log(chordList.join(', '));
+		});
+
 	}, [notes]);
 
 
