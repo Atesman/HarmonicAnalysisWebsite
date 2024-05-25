@@ -6,23 +6,26 @@ import '../styles/MainDisplay.css';
 
 function MainDisplay({notes, tonic, sharpOrFlat}){
 
-	const [chordInfo, updateChords] = useState(new Map());
+	const [chordInfo, updateChords] = useState(new Map([
+		[0, [0, 2]],
+		[2, [3, 4]],
+		[4, [3, 4]],
+		[5, [0, 2]],
+		[7, [0, 1]],
+		[9, [3, 4]],
+		[11, [6, 7]],
+		]));
 	const [chordNames, updateChordNames] = useState([]);
 
 	useEffect(() => {
 		const newChordInfo = identifyChords(notes);
 		updateChords(newChordInfo);
 
-		newChordInfo.forEach((value, key) => {
-			console.log(key+", " +value);
-		});
 
 		const tempNames = nameChords(newChordInfo, tonic, sharpOrFlat);
 		updateChordNames(tempNames);
 
-		tempNames.forEach((chordList) => {
-			console.log(chordList.join(', '));
-		});
+		
 
 	}, [notes]);
 
@@ -31,9 +34,6 @@ function MainDisplay({notes, tonic, sharpOrFlat}){
 		updateChordNames(tempNames);
 	}, [tonic, sharpOrFlat]);
 
-	useEffect(() => {
-	
-	}, [chordNames]);
 
 
 
