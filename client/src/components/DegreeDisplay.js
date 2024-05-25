@@ -5,7 +5,7 @@ import '../styles/DegreeDisplay.css';
 
 const DegreeDisplay = React.memo(function DegreeDisplay(notes){
 
-	const [degreeInfo, updateInfo] = useState([[0, 4, 7]]);
+	const [degreeInfo, updateInfo] = useState("1 - 2 - 3 - 4 - 5 - 6 - 7");
 
 
 	useEffect(() => {

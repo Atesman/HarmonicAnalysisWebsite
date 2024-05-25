@@ -1,20 +1,26 @@
 import React, {useState, useEffect} from 'react';
 import identifyChords from '../utils/IdentifyChords.js'
+import nameChords from '../utils/NameChords.js'
 import '../styles/MainDisplay.css';
 
 
 function MainDisplay({notes, tonic, sharpOrFlat}){
 
-	const [chordInfo, calculateChords] = useState([0, 4, 7]);
-
+	const [chordInfo, updateChords] = useState(new Map());
+	const [chordNames, updateChordNames] = useState([]);
 
 	useEffect(() => {
 		const newChordInfo = identifyChords(notes);
-		calculateChords(newChordInfo);
+		updateChords(newChordInfo);
+
 		newChordInfo.forEach((value, key) => {
 			console.log(key+", " +value);
 		});
+
 	}, [notes]);
+
+
+
 
 
 	return(
