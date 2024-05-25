@@ -17,7 +17,7 @@ function MainDisplay({notes, tonic, sharpOrFlat}){
 			console.log(key+", " +value);
 		});
 
-		const tempNames = nameChords(newChordInfo);
+		const tempNames = nameChords(newChordInfo, tonic, sharpOrFlat);
 		updateChordNames(tempNames);
 
 		tempNames.forEach((chordList) => {
@@ -26,6 +26,14 @@ function MainDisplay({notes, tonic, sharpOrFlat}){
 
 	}, [notes]);
 
+	useEffect(() => {
+		const tempNames = nameChords(chordInfo, tonic, sharpOrFlat);
+		updateChordNames(tempNames);
+	}, [tonic, sharpOrFlat]);
+
+	useEffect(() => {
+	
+	}, [chordNames]);
 
 
 
@@ -33,7 +41,11 @@ function MainDisplay({notes, tonic, sharpOrFlat}){
 	return(
 		<div className="main-display">
 			<div>
-				     C         C7        CM7       Cm        Cm7       CmM7      Cdim    Cdim7     CdimM7    C+        C+7       C+M7     
+				{chordNames.map((chordList, index) => (
+                    <div key={index}>
+                        {chordList.join(' - ')}
+                    </div>
+                ))}
 			</div>
 		</div>
 	);
