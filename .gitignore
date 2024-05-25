@@ -27,3 +27,4 @@ yarn-error.log*
 
 
 token.txt
+client/utils/IdentifyChords.js

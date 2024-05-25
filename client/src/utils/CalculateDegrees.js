@@ -48,9 +48,7 @@ function calculateDegrees(notes){
 	    }
 	}
 
-
 	let degrees = noteDegreeNames.join(" - ");
-
 
 	return degrees;
 }
