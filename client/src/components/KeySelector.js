@@ -20,7 +20,7 @@ function KeySelector({tonic, changeKey}) {
                 <button
                     key={keyName}
                     onClick={() => handleClick(keyName)}
-                    className={`button ${activeKey === keyName ? 'button-active' : ''}`}
+                    className={`key-button ${activeKey === keyName ? 'key-button-active' : ''}`}
                 >
                     {keyName}
                 </button>

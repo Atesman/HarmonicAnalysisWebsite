@@ -21,12 +21,12 @@ const HomePage = () => {
 				<MainDisplay notes={notes} tonic={tonic} sharpOrFlat={sharpOrFlat} />
 			</div>
 
-			<div className="note-selector-container">
-				<NoteSelector notes={notes} updateNoteValues={updateNoteValues} />
-			</div>
-
 			<div className="key-selector-container">
 				<KeySelector tonic={tonic} changeKey={changeKey} />
+			</div>
+
+			<div className="note-selector-container">
+				<NoteSelector notes={notes} updateNoteValues={updateNoteValues} />
 			</div>
 
 			<div className="sharp-or-flat-container">
