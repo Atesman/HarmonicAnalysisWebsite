@@ -34,7 +34,32 @@ function MainDisplay({notes, tonic, sharpOrFlat}){
 	}, [tonic, sharpOrFlat]);
 
 
-	return(
+	const maxColumns = Math.max(...chordNames.map(chordList => chordList.length));
+
+	return (
+	    <div className="main-display">
+	        <div
+	            className="grid-container"
+	            style={{
+	                display: 'grid',
+	                gridTemplateColumns: `repeat(${maxColumns}, 1fr)`
+	            }}
+	        >
+	            {chordNames.map((chordList, rowIndex) => (
+	                Array.from({ length: maxColumns }).map((_, colIndex) => (
+	                    <div
+	                        key={`${rowIndex}-${colIndex}`}
+	                        className="grid-item"
+	                    >
+	                        {chordList[colIndex] || ''}
+	                    </div>
+	                ))
+	            ))}
+	        </div>
+	    </div>
+	);
+
+	{/*return(
 		<div className="main-display">
 			<div>
 				{chordNames.map((chordList, index) => (
@@ -44,7 +69,7 @@ function MainDisplay({notes, tonic, sharpOrFlat}){
                 ))}
 			</div>
 		</div>
-	);
+	);*/}
 }
 
 export default MainDisplay;

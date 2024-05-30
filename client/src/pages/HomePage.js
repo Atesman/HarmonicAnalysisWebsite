@@ -18,12 +18,13 @@ const HomePage = () => {
 		<div className="home-page-container">
 
 			<div className="main-display-container">
+				<KeySelector tonic={tonic} changeKey={changeKey} />
 				<MainDisplay notes={notes} tonic={tonic} sharpOrFlat={sharpOrFlat} />
 			</div>
 
-			<div className="key-selector-container">
+			{/*<div className="key-selector-container">
 				<KeySelector tonic={tonic} changeKey={changeKey} />
-			</div>
+			</div>*/}
 
 			<div className="note-selector-container">
 				<NoteSelector notes={notes} updateNoteValues={updateNoteValues} />
