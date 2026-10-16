@@ -28,5 +28,3 @@ yarn-error.log*
 
 
 token.txt
-client/src/utils/IdentifyChords.js
-client/src/utils/NameChords.js
